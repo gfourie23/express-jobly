@@ -33,7 +33,7 @@ async function commonBeforeAll() {
 async function commonBeforeEach() {
   await db.query("BEGIN");
 }
-
+ 
 async function commonAfterEach() {
   await db.query("ROLLBACK");
 }
